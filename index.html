@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логикалык Машыктыруучу</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-animation"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="logo">Логикалык<span>суроолор</span></h1>
+            <div class="stats">
+                <span id="level-badge">Деңгээл: Жеңил</span>
+                <span id="score-display">Упай: 0</span>
+            </div>
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+        </header>
+
+        <main id="game-card" class="glass">
+            <div id="question-box">
+                <p id="question-text">Жүктөлүүдө...</p>
+                <div id="options-grid"></div>
+            </div>
+            <p id="feedback-text"></p>
+        </main>
+
+        <div id="result-screen" class="glass hidden">
+            <h2>Оюн аяктады! 🏆</h2>
+            <p id="final-stats"></p>
+            <button onclick="location.reload()">Кайра баштоо</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
